@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="sgrouples.foursquare" module="rogue_2.9.1" revision="1.1.7-SNAPSHOT" status="release" publication="20120320154808">
+		<description>
+		rogue
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="rogue_2.9.1" type="pom" ext="pom" conf="pom"/>
+		<artifact name="rogue_2.9.1" type="jar" ext="jar" conf="compile"/>
+		<artifact name="rogue_2.9.1" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="rogue_2.9.1" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.9.1" conf="compile->default(compile)"/>
+		<dependency org="net.liftweb" name="lift-mongodb-record_2.9.1" rev="2.4" conf="compile->default(compile)">
+			<exclude org="org.mongodb" module="*" name="*" type="jar" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.mongodb" name="mongo-java-driver" rev="2.7.3" conf="compile->default(compile)"/>
+		<dependency org="junit" name="junit" rev="4.5" conf="test->default(compile)"/>
+		<dependency org="com.novocode" name="junit-interface" rev="0.6" conf="test->default(compile)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.26" conf="provided->default(compile)"/>
+		<dependency org="org.scala-tools.testing" name="specs_2.9.1" rev="1.6.9" conf="test->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.9.1" conf="test->default(compile)"/>
+		<exclude org="org.scala-lang" module="scala-library" artifact="*" type="jar" ext="*" matcher="exact"/>
+		<exclude org="org.scala-lang" module="scala-compiler" artifact="*" type="jar" ext="*" matcher="exact"/>
+		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.9.1"/>
+		<override org="org.scala-lang" module="scala-compiler" matcher="exact" rev="2.9.1"/>
+	</dependencies>
+</ivy-module>
