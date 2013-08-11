@@ -6,31 +6,6 @@
   <name>JODConverter - Core Library</name>
   <version>3.0.2</version>
   <description>JODConverter converts office documents using OpenOffice.org</description>
-  <url>http://jodconverter.googlecode.com</url>
-  <inceptionYear>2003</inceptionYear>
-  <developers>
-    <developer>
-      <id>mirko.nasato</id>
-      <name>Mirko Nasato</name>
-      <email>mirko@artofsolving.com</email>
-    </developer>
-  </developers>
-  <contributors>
-    <contributor>
-      <name>Shervin Asgari</name>
-      <email>shervin@asgari.no</email>
-    </contributor>
-  </contributors>
-  <licenses>
-    <license>
-      <name>GNU Lesser General Public License, Version 3 or later</name>
-      <url>http://www.gnu.org/licenses/lgpl.html</url>
-    </license>
-  </licenses>
-  <scm>
-    <connection>scm:svn:https://jodconverter.googlecode.com/svn/trunk/jodconverter-core/</connection>
-    <url>http://jodconverter.googlecode.com/svn/trunk/jodconverter-core</url>
-  </scm>
   <build>
     <extensions>
       <extension>
@@ -89,7 +64,6 @@
             </goals>
           </execution>
         </executions>
-        <configuration />
       </plugin>
     </plugins>
   </build>
@@ -97,10 +71,6 @@
     <repository>
       <id>jboss-public-repository-group</id>
       <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-    </repository>
-    <repository>
-      <id>tuhlmann-mvn-gh</id>
-      <url>https://github.com/tuhlmann/tuhlmann-mvn-repo/raw/master/snapshots</url>
     </repository>
   </repositories>
   <dependencies>
@@ -148,8 +118,5 @@
       <url>file:///Users/tuhlmann/entw/aktuell/sgrouples-all/tuhlmann-mvn-repo/snapshots/</url>
     </repository>
   </distributionManagement>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 </project>
 
