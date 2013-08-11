@@ -145,7 +145,7 @@
   <distributionManagement>
     <repository>
       <id>tuhlmann-mvn</id>
-      <url>file:/Users/tuhlmann/entw/aktuell/sgrouples-all/tuhlmann-mvn-repo/snapshots/</url>
+      <url>file:///Users/tuhlmann/entw/aktuell/sgrouples-all/tuhlmann-mvn-repo/snapshots/</url>
     </repository>
   </distributionManagement>
   <properties>
