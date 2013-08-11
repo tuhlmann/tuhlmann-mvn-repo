@@ -6,37 +6,5 @@
   <name>JODConverter</name>
   <version>3.0.2</version>
   <description>JODConverter converts office documents using OpenOffice.org</description>
-  <repositories>
-    <repository>
-      <id>jboss-public-repository-group</id>
-      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-    </repository>
-  </repositories>
-  <dependencies>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>6.0.1</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>junit</artifactId>
-          <groupId>junit</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>bsh</artifactId>
-          <groupId>org.beanshell</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jcommander</artifactId>
-          <groupId>com.beust</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>snakeyaml</artifactId>
-          <groupId>org.yaml</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-  </dependencies>
 </project>
 
